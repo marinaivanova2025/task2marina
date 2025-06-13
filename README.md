@@ -1,2 +1,1 @@
-task2marina0000                     
-yyyyy
+task2marina0000
