@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: setup Python
-      - uses: actions/setup-python@v5
+        uses: actions/setup-python@v5
 
       - name: Run passing Python script
-      - run: python .github/scripts/always_pass.py
+        run: python .github/scripts/always_pass.py
       
