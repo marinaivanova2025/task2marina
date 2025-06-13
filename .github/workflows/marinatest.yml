@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+on: [pull_request]
+jobs:
+  always-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v4
+
+      - name: setup Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run failing Python script
+        run: python .githuib/scripts/always_fail.py
+      
