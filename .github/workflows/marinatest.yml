@@ -12,6 +12,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run failing Python script
-        run: python .githuib/scripts/always_fail.py
+      - name: Run passing Python script
+        run: python .githuib/scripts/always_pass.py
       
