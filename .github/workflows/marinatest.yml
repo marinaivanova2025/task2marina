@@ -9,8 +9,6 @@ jobs:
 
       - name: setup Python
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
 
       - name: Run passing Python script
       - run: python .github/scripts/always_pass.py
