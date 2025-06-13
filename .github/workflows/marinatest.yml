@@ -3,15 +3,15 @@ on: [pull_request]
 jobs:
   always-fail:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-      - uses: actions/checkout@v4
+steps:
+    - name: Checkout code
+    - uses: actions/checkout@v4
 
-      - name: setup Python
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+    - name: setup Python
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
 
-      - name: Run passing Python script
-        run: python .github/scripts/always_pass.py
+    - name: Run passing Python script
+      run: python .github/scripts/always_pass.py
       
